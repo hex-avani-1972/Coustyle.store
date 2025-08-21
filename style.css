@@ -10,8 +10,38 @@ header {
   background: black;
   color: white;
   padding: 20px;
+} 
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 15px 30px;
+  color: white;
 }
 
+nav .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav .nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav .nav-links li a:hover {
+  color: #ff4d4d; /* red hover */
+}
 button {
   background: #ff5a5f;
   color: white;
