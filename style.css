@@ -99,3 +99,35 @@ nav ul li a:hover {
     margin: 10px 0;
   }
 }
+/* ✅ Hamburger Menu Styling */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Show hamburger on small screens */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    background: #111;
+    padding: 10px 0;
+  }
+
+  nav .nav-links.active {
+    display: flex;
+  }
+
+  nav .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
