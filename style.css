@@ -137,7 +137,6 @@ nav ul li a:hover {
   font-size: 28px;
   cursor: pointer;
 }
-
 /* Mobile menu styles */
 @media (max-width: 768px) {
   nav .nav-links {
@@ -149,17 +148,17 @@ nav ul li a:hover {
     right: 0;
     width: 200px;
     text-align: right;
-    padding: 20px;
-
-    /* Animation setup */
+    padding: 0; /* remove padding here */
+    
+    /* animation setup */
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-out;
+    transition: max-height 0.4s ease-in-out, padding 0.3s ease;
   }
 
   nav .nav-links.active {
-    max-height: 500px; /* enough space to show all links */
-    transition: max-height 0.4s ease-in;
+    max-height: 300px; /* enough for 4 links */
+    padding: 20px; /* add padding when expanded */
   }
 
   .hamburger {
