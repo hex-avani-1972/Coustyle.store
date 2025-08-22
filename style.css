@@ -141,25 +141,31 @@ nav ul li a:hover {
 /* Mobile menu styles */
 @media (max-width: 768px) {
   nav .nav-links {
+    display: flex;
+    flex-direction: column;
+    background: #111;
     position: absolute;
     top: 60px;
-    right: -220px; /* start off-screen */
+    right: 0;
     width: 200px;
-    background: #111;
-    flex-direction: column;
     text-align: right;
     padding: 20px;
-    transition: right 0.3s ease-in-out; /* smooth slide */
+
+    /* Animation setup */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
   }
 
   nav .nav-links.active {
-    right: 0; /* slide in */
+    max-height: 500px; /* enough space to show all links */
+    transition: max-height 0.4s ease-in;
   }
 
   .hamburger {
     display: block;
-    font-size: 28px;
     color: white;
+    font-size: 28px;
     cursor: pointer;
   }
 }
