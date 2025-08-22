@@ -143,17 +143,17 @@ nav ul li a:hover {
   nav .nav-links {
     position: absolute;
     top: 60px;
-    right: -220px; /* hidden off-screen */
+    right: -220px; /* start off-screen */
     width: 200px;
     background: #111;
     flex-direction: column;
     text-align: right;
     padding: 20px;
-    transition: right 0.3s ease-in-out; /* smooth slide effect */
+    transition: right 0.3s ease-in-out; /* smooth slide */
   }
 
   nav .nav-links.active {
-    right: 0; /* slide into view */
+    right: 0; /* slide in */
   }
 
   .hamburger {
