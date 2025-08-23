@@ -167,4 +167,15 @@ nav ul li a:hover {
     font-size: 28px;
     cursor: pointer;
   }
+  /* Navbar logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between image and text */
+}
+
+.logo img {
+  height: 40px; /* control logo size */
+  width: auto;
+}
 }
