@@ -195,4 +195,13 @@ nav ul li a:hover {
   margin-right: 8px;   /* Space between logo and text */
   object-fit: cover;   /* Ensures image fits nicely */
 }
-
+.logo img {
+  width: 40px;          /* same height & width */
+  height: 40px;
+  border-radius: 50%;   /* makes it circular */
+  border: 2px solid white; /* circular border */
+  object-fit: cover;    /* keeps image inside circle */
+  margin-right: 8px;
+  vertical-align: middle;
+}
+  
