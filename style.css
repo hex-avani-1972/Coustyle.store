@@ -178,4 +178,17 @@ nav ul li a:hover {
   height: 40px; /* control logo size */
   width: auto;
 }
+/* Logo and text alignment */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
 }
+
+.logo img {
+  height: 30px;   /* Adjust size of logo */
+  margin-right: 8px; /* Space between logo and text */
+}
+  
